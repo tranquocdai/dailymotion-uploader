@@ -43,7 +43,7 @@
             <input type="text" class='form-control' placeholder="Title Video" name="title_file" id="title_file" /> 
 			<br/><br/>
 			<label>Description:</label>
-			<textarea class='form-control' name='videoDescription' id='videoDescription'>Dailymotion PHP SDK upload test</textarea>
+			<textarea class='form-control' name='videoDescription' id='videoDescription'>Dailymotion PHP SDK upload by https://tool.tranquocdai.com/daily/</textarea>
 			<br/><br/>
 			<label>Tags:</label>
 			<input type='text' name='tags' id='tags' class='form-control' data-role='tagsinput' />

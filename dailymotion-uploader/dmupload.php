@@ -1,24 +1,7 @@
 <?php 
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 ini_set("display_errors", 1);
-session_start();
-function force_download111($file,$video_url){
-  $video_data = file_get_contents($video_url);
-  file_put_contents($file, $video_data);
-}
-function force_download($file,$video_url){
-  $video_data = file_get_contents($video_url);
-  file_put_contents($file, $video_data);
-  if(isset($file) && file_exists($file))  {
-		header('Content-length: ' .  filesize($file));
-	    header("Cache-Control: public");
-        header("Content-Description: File Transfer");
-        header('Content-Disposition: attachment; filename= "' . $file . '"');
-        header("Content-Type: video/mp4");
-        header("Content-Transfer-Encoding: binary");
-    //readfile($file);
-  }
-}
+
 $name = $_FILES["upload_file"]["name"];
 move_uploaded_file($_FILES["upload_file"]["tmp_name"], "videos/".$name);
 $testVideoFile = "videos/".$name;
@@ -32,23 +15,15 @@ $videoTitle = $_POST['title_file'];
 $videoCategory = "TV";
 $videoDescription = $_POST['videoDescription'];
 $videoTags= $_POST['tags'];
-//$link_mp4_file = $_POST['link_mp4_file'];
-//$testVideoFile = force_download('videos/video.mp4',$link_mp4_file);
-//$testVideoFile = '/videos/video.mp4';
-//$testVideoFile = $chemin;
 
-if (empty($_POST['user']) || empty($_POST['passw']))
-{
+if (empty($apiKey) || empty($apiSecret) || empty($testUser) || empty($testPassword)){
     echo "Please fill up All field username, password, Title,Description, Tags ";
-	unlink($testVideoFile);
 	die();
 }
-else {
+
 try {
 	$api->setGrantType(Dailymotion::GRANT_TYPE_PASSWORD, $apiKey, $apiSecret, array('write','delete','manage_videos'), array('username' => $testUser, 'password' => $testPassword));
 	//sleep(2);
-    //$url = $api->uploadFile($testVideoFile);
-	
 	$progressUrl = null;
 	$url = $api->uploadFile($testVideoFile, null, $progressUrl);
 	//var_dump($progressUrl);
@@ -78,5 +53,5 @@ catch (DailymotionAuthRefusedException $e)
      }
 	else { echo "OOp Error !";}
 	echo "<p>Upload Next Video <a href='https://tool.tranquocdai.com/daily/'>Click Here</a> </p>";
-}
+
  ?>
