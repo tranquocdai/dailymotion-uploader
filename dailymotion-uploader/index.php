@@ -50,25 +50,11 @@
 			<br/><br/>
 			<label>Upload File:</label>
 			<input type="file" name="upload_file" id="upload_file" />
-			<!--label>Link Mp4 File:</label>
-            <input type="text" class='form-control' placeholder="http://yourlink.com/video.mp4" value="" name="link_mp4_file" id="link_mp4_file" /--> 
 			<br/><br/>
             <button type="submit" id="btn">Upload</button> 
         </form>
 		<div id="progress-wrp"><div class="progress-bar"></div ><div class="status">0%</div></div>
 		<div id="output"><!-- error or success results --></div>
-		<br/><br/>
-		<div class="ads">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- Ads728x90 -->
-		<ins class="adsbygoogle"
-			 style="display:inline-block;width:728px;height:90px"
-			 data-ad-client="ca-pub-1302941179181914"
-			 data-ad-slot="5427454951"></ins>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-		</div>
 		<br/><br/>
 		<br/><br/>
 		</div>
