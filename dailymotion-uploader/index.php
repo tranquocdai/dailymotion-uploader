@@ -25,7 +25,7 @@
     <div id="main" class="container"> 
         <h1>Dailymotion Upload video!</h1>
 		<div class="row clearfix">
-		<div class="col-md-9 column">
+		<div class="col-md-12 column">
         <form method="post" enctype="multipart/form-data"  action="dmupload.php" id="upload_form">
 			<label>API:</label>
             <input type="text" class='form-control' placeholder="Your apikey" name="apikey" id="apikey" /> 
@@ -57,20 +57,6 @@
 		<div id="output"><!-- error or success results --></div>
 		<br/><br/>
 		<br/><br/>
-		</div>
-		<div class="col-md-3 column">
-			<div class="ads">
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- Auto Ads -->
-			<ins class="adsbygoogle"
-				 style="display:block"
-				 data-ad-client="ca-pub-1302941179181914"
-				 data-ad-slot="9337590436"
-				 data-ad-format="auto"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-			</div>
 		</div>
 		</div>
     </div>
