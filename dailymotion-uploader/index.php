@@ -9,8 +9,8 @@
 <meta property="og:title" content="Dailymotion Remote Uploader"> 
 <meta property="og:description" content="This app allows you to upload video files to Dailymotion directly. You can upload your video files to Dailymotion and very easily without using Dailymotion web interface.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="//tool.tranquocdai.com/daily">
-<meta property="og:image" content="//dailymotion.tranquocdai.com/img/logo128.png">
+<meta property="og:url" content="https://upload.tranquocdai.com/">
+<meta property="og:image" content="https://tranquocdai.com/wp-content/uploads/dailymotion2018-vpntool-1024x576.jpg">
 <link rel="shortcut icon" href="favicon.ico">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
@@ -53,7 +53,7 @@
 			<br/><br/>
             <button type="submit" id="btn">Upload</button> 
         </form>
-		<div id="progress-wrp"><div class="progress-bar"></div ><div class="status">0%</div></div>
+		<div id="progress-wrp"><div class="progress-bar"></div><div class="status">0%</div></div>
 		<div id="output"><!-- error or success results --></div>
 		<br/><br/>
 		<br/><br/>
