@@ -52,6 +52,6 @@ catch (DailymotionAuthRefusedException $e)
 	   unlink($testVideoFile);
      }
 	else { echo "OOp Error !";}
-	echo "<p>Upload Next Video <a href='https://tool.tranquocdai.com/daily/'>Click Here</a> </p>";
+	echo "<p>Upload Next Video <a href='https://upload.tranquocdai.com/'>Click Here</a> </p>";
 
  ?>
